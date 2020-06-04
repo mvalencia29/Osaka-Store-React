@@ -1,41 +1,47 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Form, Card, Button } from "react-bootstrap";
-import "./styles.css";
 import { useHistory } from "react-router-dom";
 
-function Profile() {
+function Registrar() {
   const history = useHistory();
 
   const redirect = () => {
-    history.push("/");
+    history.push("/inventario");
   };
 
   return (
     <React.Fragment>
-      <Navbar options={true} active="profile" />
+      <Navbar options={true} active="i" />
       <div className="principal-container">
+        <h4>Registrar Producto</h4>
+      </div>
+      <div className="secondary-container">
         <Card body bg="light" text="dark" className="mb-2" id="card-profile">
           <Form style={{ width: "400px" }}>
             <Form.Group controlId="formGroupEmail">
-              <Form.Label>Nombre</Form.Label>
-              <Form.Control type="text" value="Miguel" />
+              <Form.Label>Cod. Producto</Form.Label>
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group controlId="formGroupPassword">
-              <Form.Label>Apellido</Form.Label>
-              <Form.Control type="text" value="Valencia" />
+              <Form.Label>Producto</Form.Label>
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group controlId="formGroupEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="text" value="lmvb95@gmail.com" />
+              <Form.Label>Marca</Form.Label>
+              <Form.Control type="text" />
             </Form.Group>
-            <Form.Group controlId="formGroupPassword">
-              <Form.Label>Usuario</Form.Label>
-              <Form.Control type="text" value="mvalencia" />
+            <Form.Group controlId="formGroupEmail">
+              <Form.Label>Precio</Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group controlId="formGroupEmail">
+              <Form.Label>Cantidad</Form.Label>
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group controlId="formGroupPassword">
               <Button variant="primary" id="btn-back" onClick={redirect}>
-                Volver
+                Registrar
               </Button>
             </Form.Group>
           </Form>
@@ -45,4 +51,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default Registrar;

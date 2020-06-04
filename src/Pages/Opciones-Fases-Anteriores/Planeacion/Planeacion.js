@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 
-function Administrador() {
+function Planeacion() {
   return (
     <React.Fragment>
-      <Navbar options={true} active="a" />
+      <Navbar options={true} active="f" />
       <div className="principal-container">
         <h4>Proximamente estara disponible esta opcion</h4>
       </div>
@@ -12,4 +12,4 @@ function Administrador() {
   );
 }
 
-export default Administrador;
+export default Planeacion;

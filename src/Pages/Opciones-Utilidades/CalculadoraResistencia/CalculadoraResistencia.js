@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Form, Card, Button } from "react-bootstrap";
-import "./styles.css";
 import { useHistory } from "react-router-dom";
 
-function Profile() {
+function CalculadoraResistencia() {
   const history = useHistory();
 
   const redirect = () => {
@@ -13,9 +12,12 @@ function Profile() {
 
   return (
     <React.Fragment>
-      <Navbar options={true} active="profile" />
+      <Navbar options={true} active="u"/>
       <div className="principal-container">
         <Card body bg="light" text="dark" className="mb-2" id="card-profile">
+          <Card.Title style={{ textAlign: "center" }}>
+            Calculadora Resistencia
+          </Card.Title>
           <Form style={{ width: "400px" }}>
             <Form.Group controlId="formGroupEmail">
               <Form.Label>Nombre</Form.Label>
@@ -45,4 +47,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default CalculadoraResistencia;

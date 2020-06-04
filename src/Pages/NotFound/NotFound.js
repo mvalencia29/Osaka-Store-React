@@ -6,7 +6,7 @@ function NotFound() {
     <React.Fragment>
       <Navbar options={false} boton="no" />
       <div className="principal-container">
-        <p>Upss! Pagina no encontrada</p>
+        <h4>Upss! Pagina no encontrada</h4>
       </div>
     </React.Fragment>
   );

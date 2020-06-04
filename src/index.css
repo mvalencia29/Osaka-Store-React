@@ -17,3 +17,10 @@ code {
   justify-content: center;
   display: flex;
 }
+
+.secondary-container {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+}
+

@@ -1,5 +1,15 @@
 .principal-container {
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
-  }
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+#btn-back {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#card-profile {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  cursor: pointer;
+}
