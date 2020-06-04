@@ -15,8 +15,7 @@ function CalculadoraVentas() {
   const history = useHistory();
 
   const calcular = () => {
-    var porcentaje = (utilidad + IVA) / 100 + 1;
-    var total = valorc * porcentaje;
+    
   };
 
   return (
