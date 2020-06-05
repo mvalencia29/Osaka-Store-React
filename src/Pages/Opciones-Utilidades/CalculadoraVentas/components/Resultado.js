@@ -25,7 +25,7 @@ function Resultado() {
           <Form.Control type="text" value="lmvb95@gmail.com" />
         </Form.Group>
         <Form.Group controlId="formGroupPassword">
-          <Button variant="primary" id="btn-back" onClick={calcular}>
+          <Button variant="primary" id="btn-back" onClick={volver}>
             Ok
           </Button>
         </Form.Group>
